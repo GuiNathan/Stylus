@@ -1,0 +1,4 @@
+é necessário ter o node.js
+npm = node package manager
+no terminal basta digitar: 
+npm install stylus -g
