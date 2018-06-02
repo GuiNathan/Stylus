@@ -1,0 +1,22 @@
+@import 'styl/*'
+
+body
+	background rgba(#000, 0.9)
+	// função rgba converte o valor da cor para rgb e atribui uma opacidade
+	//background grayscale(red)
+	// versão gray de red
+	//background invert(blue)
+	// mostra a cor inversa da do parametro
+	color desaturate(red, 50%)
+	//desatura por 50% de red
+	margin-top abs(-20px)
+	// margin-top 20px
+	margin-bottom ceil(4.7px)
+	//5px
+	// floor(4.2%) = 4%
+	margin-left unit(4.2%, 'px')
+	// 4.2px - troca a unidade do valor
+
+// para mais funções predefinidas
+// http://stylus-lang.com/docs/bifs.html
+	

@@ -1,0 +1,57 @@
+
+// VARIABLES
+
+body             
+	// não há a nescessidade de brackets  {} nem de colons ou semi colons : ;
+	color #000		
+	// a estilização é feita baseada na identação
+	background blue 
+	// bg blue  - cor azul
+
+blue = #ae4521;
+//definição de variáveis
+$blue = #ccc;
+// pode ser definida usando $ tbm
+
+h2
+	color blue
+	// blue - #ae4521    
+	// valor se sobrepõe ao default
+	background red
+	border 1px solid @background
+	// usa os atributos de background, que seria a cor 'red = #f00'
+	p 
+		background green
+		color @background
+		// vai receber o ultimo valor definido para background  'green = #0f0'
+
+
+// MIXINS
+
+// é como uma predefinição de código que pode ser utilizada para economizar tempo
+
+border-radius(parameter = 15px)
+	// posso atribuir um valor padrão, sendo 15px
+	-webkit-border-radius parameter
+	border-radius parameter
+
+
+div
+	border-radius(5px)
+	// o valor padrão é de 15px, mas pode ser sobrescrito
+	border-radius 5px 
+	// mixin transparency, comando acima chama o mixin e não a propriedade em si
+
+
+clear-fix()
+	zoom 1
+	&:after
+	&:before
+		content ""
+		display table
+	&:after
+		clear both
+
+div#div01
+	clear-fix()
+		

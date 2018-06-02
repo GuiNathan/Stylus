@@ -2,3 +2,9 @@
 npm = node package manager
 no terminal basta digitar: 
 npm install stylus -g
+
+caminho no cmd:
+cd C:\Users\Guilherme\Documents\Web\Aulas\STYLUS
+
+to watch files jus type in cmd:
+stylus --watch stylus/ --out css/	 	

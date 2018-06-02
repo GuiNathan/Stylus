@@ -1,0 +1,30 @@
+body {
+  color: #000;
+  background: #00f;
+}
+h2 {
+  color: #ae4521;
+  background: #f00;
+  border: 1px solid #f00;
+}
+h2 p {
+  background: #008000;
+  color: #008000;
+}
+div {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+div#div01 {
+  zoom: 1;
+}
+div#div01:after,
+div#div01:before {
+  content: "";
+  display: table;
+}
+div#div01:after {
+  clear: both;
+}

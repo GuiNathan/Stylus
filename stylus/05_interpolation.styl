@@ -1,0 +1,16 @@
+
+
+vendor(propriedade, valor)
+	//vendor = -webkit-, -moz-
+	//esse mixin torna possível a compatibilidade de qualquer atributo em css
+	{propriedade} valor
+	//interpretado como uma string
+	-webkit-{propriedade} valor
+	-moz-{propriedade} valor
+
+border-radius(value = 20px)
+	vendor('border-radius', value)
+	
+
+body
+	border-radius(10px)
